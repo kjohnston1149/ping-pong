@@ -11,19 +11,27 @@ h2{
 
 ol {
   color: purple;
+  font-size: 1.5em;
 }
 
 ul {
   color: red;
 }
 
-#NavbarList {
+ul#navBarList {
   color: black;
 }
 
 .container{
   background-color: lightblue;
   padding-bottom: 15px;
+}
+
+.nav {
+  margin: 5px;
+  border-style: solid;
+  border: 3px;
+  border-color: black;
 }
 
 .jumbotron{
