@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src ="js/scripts.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>Ping-Pong Counter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="jumbotron">Get ready to count- Ping Pong style!</h1>
+      <h2>The Ping-Pong counter rules:</h3>
+        <ol>
+          <li>Numbers divisible by 3 are replaced with "ping"</li>
+          <li>Numbers divisible by 5 are replaced with "pong"</li>
+          <li>Numbers divisible by 15 are replaced with "ping-pong"</li>
+        </ol>
+      <br>
+      <h3>Now let's count!!</h3>
+      <form id="counter">
+        <div class="form-group">
+          <label for="numImput">Enter a number to Ping-Pong count to:</label>
+          <input id="numInput" type="text">
+        </div>
+        <button type="submit" class="btn btn-success">Count!</button>
+      </form>
+      <div id="results">
+      <h3>The Ping-Pong List!</h3>
+        <ul>
+        </ul>
+        <button id="resetBtn" type="reset" class="btn btn-default" onClick="window.location.reload()">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
