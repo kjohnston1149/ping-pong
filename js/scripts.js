@@ -6,8 +6,17 @@ var convert = function(inputNumber) {
    for (var i = 1; i <= inputNumber; i++) {
      countArray.push(i);
    }
-   console.log(countArray);
-
+  // var countString = countArray.toString().split(",");
+  //   console.log(countString);
+  var pingPongArray = []
+   for (var j = 1; j <= countArray.length; j++){
+    if (j % 3 === 0) {
+      pingPongArray.push("ping");
+    } else {
+      pingPongArray.push(j);
+    }
+  };
+   console.log(pingPongArray);
 }
 // Front-end logic
   $("form").submit(function(event){
