@@ -32,8 +32,7 @@ var ppConverts = function(inputNumber) {
 
     results.forEach(function(result) {
       $('#resultList').append('<li>' + result + '</li>');
-
-  });
+    });
 
 
     if (isNaN(inputNumber) || inputNumber <= 0) {
