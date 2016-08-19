@@ -9,14 +9,16 @@ var ppConverts = function(inputNumber) {
   var pingPongArray = []
    for (var j = 1; j <= countArray.length; j++){
      if (j % 15 === 0) {
-       pingPongArray.push("ping-pong");
-     } else if (j % 5 === 0) {
-       pingPongArray.push("pong");
-     } else if (j % 3 === 0) {
-       pingPongArray.push("ping");
-     } else {
-       pingPongArray.push(j);
-     }
+      pingPongArray.push("ping-pong");
+    } else if (j % 5 === 0) {
+      pingPongArray.push("pong");
+    } else if (j % 3 === 0) {
+      pingPongArray.push("ping");
+    } else if (j === 101) {
+      pingPongArray.push("You're really testing this")
+    } else {
+      pingPongArray.push(j);
+    }
    };
    var outputStrings = pingPongArray.toString().split(",");
    return outputStrings;
