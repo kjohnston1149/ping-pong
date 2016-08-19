@@ -22,7 +22,7 @@ _This program is a counting application with specific rules and conditions.  Whe
   * Example Input: "test"
   * Example Output: "Error- please enter a number"
 
-* It can count to all specified non-numbers
+* It can count to all specified numbers
   * Example Input: 2
   * Example Output: [1, 2]
 
