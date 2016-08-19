@@ -30,7 +30,7 @@ _This program is a counting application with specific rules and conditions.  Whe
   * Example Input: 3
   * Example Output: [1, 2, ping]
 
-* It can replace numbers divisible by 3 with "ping"
+* It can replace numbers divisible by 3 with "pong"
   * Example Input: 5
   * Example Output: [1, 2, ping, 4, pong]
 
