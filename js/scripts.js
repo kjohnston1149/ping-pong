@@ -1,17 +1,15 @@
 $(document).ready(function() {
 
 // Back-end Logic
-var convert = function(inputNumber) {
+var converts = function(inputNumber) {
   var countArray = []
    for (var i = 1; i <= inputNumber; i++) {
      countArray.push(i);
    }
-  // var countString = countArray.toString().split(",");
-  //   console.log(countString);
   var pingPongArray = []
    for (var j = 1; j <= countArray.length; j++){
     if (j % 15 === 0) {
-      pingPongArray.push("ping-pong"); 
+      pingPongArray.push("ping-pong");
     } else if (j % 5 === 0) {
       pingPongArray.push("pong");
     } else if (j % 3 === 0) {
@@ -21,12 +19,20 @@ var convert = function(inputNumber) {
     }
   };
    console.log(pingPongArray);
-}
+   var outputStrings = pingPongArray.toString().split(",");
+     console.log(outputStrings);
+    return outputStrings;
+};
 // Front-end logic
   $("form").submit(function(event){
     event.preventDefault();
     var inputNumber = parseInt($("#numInput").val());
-    var results = convert(inputNumber)
+    var results = converts(inputNumber);
+    console.log(converts);
+
+    results.forEach(function(result) {
+      $('ul').append('<li>' + result + '</li>');
+    });
 
     if (isNaN(inputNumber)) {
       $("#error").show();
