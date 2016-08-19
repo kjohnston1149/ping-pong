@@ -1,4 +1,6 @@
-
+/*body {
+  background-image: url(../img/pingpong.jpg);
+}*/
 
 h1 {
   font-weight: bold;
@@ -16,6 +18,7 @@ ol {
 
 ul {
   color: red;
+  font-size:
 }
 
 ul#navBarList {
@@ -23,11 +26,16 @@ ul#navBarList {
 }
 
 .container{
-  background-color: lightblue;
+  background-image: url(../img/pingpong.jpg);
   padding-bottom: 15px;
 }
 
-.nav {
+.row{
+  background-color: white;
+  border: 2px;
+  border-color: black;
+}
+#navBarList {
   margin: 5px;
   border-style: solid;
   border: 3px;

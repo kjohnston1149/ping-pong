@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 // Back-end Logic
-var converts = function(inputNumber) {
+var ppConverts = function(inputNumber) {
   var countArray = []
    for (var i = 1; i <= inputNumber; i++) {
      countArray.push(i);
@@ -24,14 +24,15 @@ var converts = function(inputNumber) {
 // Front-end logic
   $("form").submit(function(event){
     event.preventDefault();
+
     var inputNumber = parseInt($("#numInput").val());
-    var results = converts(inputNumber);
-      results.forEach(function(result) {
-        $('#resultList').append('<li>' + result + '</li>');
-      });
-    $("#submitButton").click(function() {
-      $("#results").remove('li');
-    });
+    var results = ppConverts(inputNumber);
+
+    results.forEach(function(result) {
+      $('#resultList').append('<li>' + result + '</li>');
+
+  });
+
 
     if (isNaN(inputNumber) || inputNumber <= 0) {
       $("#error").show();
@@ -40,5 +41,9 @@ var converts = function(inputNumber) {
       $("#results").show();
       $("#error").hide();
     }
+
+  $("form").each(function(){
+    this.reset();
   });
+});
 });
