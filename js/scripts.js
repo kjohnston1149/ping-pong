@@ -19,7 +19,7 @@ var converts = function(inputNumber) {
      }
    };
    var outputStrings = pingPongArray.toString().split(",");
-    return outputStrings;
+   return outputStrings;
 };
 // Front-end logic
   $("form").submit(function(event){
@@ -29,9 +29,9 @@ var converts = function(inputNumber) {
     results.forEach(function(result) {
       $('ul').append('<li>' + result + '</li>');
     });
-    // $("#submitButton").click(function() {
-    //   $("#results").remove();
-    // });
+    $("#submitButton").click(function() {
+      $("#results").remove('li');
+    });
 
     if (isNaN(inputNumber) || inputNumber <= 0) {
       $("#error").show();
