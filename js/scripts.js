@@ -10,10 +10,12 @@ var convert = function(inputNumber) {
   //   console.log(countString);
   var pingPongArray = []
    for (var j = 1; j <= countArray.length; j++){
-    if (j % 3 === 0) {
-      pingPongArray.push("ping");
+    if (j % 15 === 0) {
+      pingPongArray.push("ping-pong"); 
     } else if (j % 5 === 0) {
       pingPongArray.push("pong");
+    } else if (j % 3 === 0) {
+      pingPongArray.push("ping");
     } else {
       pingPongArray.push(j);
     }
