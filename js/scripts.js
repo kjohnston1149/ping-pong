@@ -8,19 +8,17 @@ var converts = function(inputNumber) {
    }
   var pingPongArray = []
    for (var j = 1; j <= countArray.length; j++){
-    if (j % 15 === 0) {
-      pingPongArray.push("ping-pong");
-    } else if (j % 5 === 0) {
-      pingPongArray.push("pong");
-    } else if (j % 3 === 0) {
-      pingPongArray.push("ping");
-    } else {
-      pingPongArray.push(j);
-    }
-  };
-   console.log(pingPongArray);
+     if (j % 15 === 0) {
+       pingPongArray.push("ping-pong");
+     } else if (j % 5 === 0) {
+       pingPongArray.push("pong");
+     } else if (j % 3 === 0) {
+       pingPongArray.push("ping");
+     } else {
+       pingPongArray.push(j);
+     }
+   };
    var outputStrings = pingPongArray.toString().split(",");
-     console.log(outputStrings);
     return outputStrings;
 };
 // Front-end logic
@@ -28,19 +26,19 @@ var converts = function(inputNumber) {
     event.preventDefault();
     var inputNumber = parseInt($("#numInput").val());
     var results = converts(inputNumber);
-    console.log(converts);
-
     results.forEach(function(result) {
       $('ul').append('<li>' + result + '</li>');
     });
+    // $("#submitButton").click(function() {
+    //   $("#results").remove();
+    // });
 
-    if (isNaN(inputNumber)) {
+    if (isNaN(inputNumber) || inputNumber <= 0) {
       $("#error").show();
       $("#results").hide();
     } else {
       $("#results").show();
       $("#error").hide();
     }
-
   });
 });

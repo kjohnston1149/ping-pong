@@ -25,14 +25,15 @@
           <label for="numImput">Enter a number to Ping-Pong count to:</label>
           <input id="numInput" type="text">
         </div>
-        <p id="error">Please enter a number</p>
-        <button type="submit" class="btn btn-success">Count!</button>
+        <p id="error">Please enter a positive, non-zero number</p>
+        <button id="submitButton" type="submit" class="btn btn-success">Count!</button>
+        <button id="resetBtn" type="reset" class="btn btn-default" onClick="window.location.reload()">Reset</button>
       </form>
       <div id="results">
       <h3>The Ping-Pong List!</h3>
         <ul>
         </ul>
-        <button id="resetBtn" type="reset" class="btn btn-default" onClick="window.location.reload()">Reset</button>
+
       </div>
     </div>
   </body>
