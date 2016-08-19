@@ -1,6 +1,6 @@
-/*body {
-  background-image: url(../img/pingpong.jpg);
-}*/
+body {
+  background-color: lavender;
+}
 
 h1 {
   font-weight: bold;
@@ -8,7 +8,11 @@ h1 {
 }
 
 h2{
-  text-decoration: underline;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 ol {
@@ -17,17 +21,22 @@ ol {
 }
 
 ul {
-  color: red;
-  font-size:
+  color: black;
+  font-size: 1.2em;
+  font-family: monospace;
+
 }
 
 ul#navBarList {
   color: black;
+  font-family: sans-serif;
 }
 
 .container{
   background-image: url(../img/pingpong.jpg);
+  background-size: cover;
   padding-bottom: 15px;
+  background-position: center;
 }
 
 .row{
@@ -35,6 +44,7 @@ ul#navBarList {
   border: 2px;
   border-color: black;
 }
+
 #navBarList {
   margin: 5px;
   border-style: solid;
