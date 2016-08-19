@@ -26,9 +26,9 @@ var converts = function(inputNumber) {
     event.preventDefault();
     var inputNumber = parseInt($("#numInput").val());
     var results = converts(inputNumber);
-    results.forEach(function(result) {
-      $('ul').append('<li>' + result + '</li>');
-    });
+      results.forEach(function(result) {
+        $('ul').append('<li>' + result + '</li>');
+      });
     $("#submitButton").click(function() {
       $("#results").remove('li');
     });
