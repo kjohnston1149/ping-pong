@@ -12,6 +12,8 @@ var convert = function(inputNumber) {
    for (var j = 1; j <= countArray.length; j++){
     if (j % 3 === 0) {
       pingPongArray.push("ping");
+    } else if (j % 5 === 0) {
+      pingPongArray.push("pong");
     } else {
       pingPongArray.push(j);
     }
